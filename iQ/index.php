@@ -13,18 +13,21 @@
         <input type="submit" name="submit" value="Login"/>
       </form>
       <?php
+      
+      //------------------HERE YOU MUST CHANGE THE DATABASE INFO TO YOUR DATABASE INFO--------------------
       define("host","localhost");
       define("user","root");
       define("password","");
       define("db","chat_database");
       session_start();
+      //--------------------------------------------------------------------------------------------------
+      
 
-
-      //-------------- WARNING SETTING THE WEBISTE ADDRES ------------------------
+      //-------------- HERE YOU MUST CHANGE THIS SESSION TO YOUR SERVER IP ADDRES ------------------------
       $_SESSION['addr']="localhost";
       //--------------------------------------------------------------------------
 
-    
+     //----------------------------------------------- LOGIN FORM----------------------------------------
       @$username=$_POST['username'];
       @$password=$_POST['password'];
       if(isset($_POST['submit'])){
@@ -58,14 +61,18 @@
         header("Location: http://".$_SESSION['addr'].'/iQ'.'/HOMEPAGE/'.'/index.php');
       }
       }
+      //--------------------------------------------------------------------------------------------------
 
       ?>
       <?php
+      //-------------------------------- IF WRONG PASSWORD------------------------------------------------
         if(isset($_GET['q'])){
           if($_GET['q']=="wrong_psswd"){
             echo '<p class="text">Sorry wrong username or password</p>';
           }
         }
+     //--------------------------------------------------------------------------------------------------
       ?>
+      
     </body>
 </html>
