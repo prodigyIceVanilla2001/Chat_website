@@ -1,0 +1,52 @@
+.text{
+
+}
+.welcome_text{
+  font-family: sans-serif;
+  float: right;
+  color: white;
+  margin: 10px;
+  background-color: gray;
+  height: 20px;
+  width: 160px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 30px;
+
+}
+#logout{
+  border-radius: 30px;
+  margin: 20px;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px 0px 0px 0px;
+    background-color: gray;
+    width: 100%;
+	}
+	.nav_list{
+     list-style-type: none;
+
+	}
+	.nav_item{
+	display: inline-block;
+     margin-left: 15px;
+	}
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color: yellow;
+    }
+    a:visited{
+        color: white;
+    }
+    a:active{
+        color: white;
+    }
+.active{
+  font-size: 25px;
+}
